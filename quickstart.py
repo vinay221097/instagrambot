@@ -10,7 +10,7 @@ from instapy import InstaPy
 from instapy import smart_run
 
 # get a session!
-session = InstaPy(username='smithjohn4321234', password='abcd4321@')
+session = InstaPy(username='smithjohn4321234', password='abcd4321@',headless_browser=True)
 
 # let's go! :>
 with smart_run(session):
