@@ -91,10 +91,7 @@ with smart_run(session):
 
     # unfollow activity
     session.set_dont_unfollow_active_users(enabled=True, posts=3)
-    session.unfollow_users(amount=random.randint(30, 100),
-                           InstapyFollowed=(True, "all"), style="FIFO",
-                           unfollow_after=90 * 60 * 60, sleep_delay=501)
-
+    session.unfollow_users(amount=60, instapy_followed_enabled=True, instapy_followed_param="all", style="FIFO", unfollow_after=90*60*60, sleep_delay=501)
     """ Joining Engagement Pods...
     """
     session.join_pods(topic='sports')
