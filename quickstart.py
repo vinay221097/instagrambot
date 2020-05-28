@@ -25,7 +25,6 @@ def get_session():
     session = InstaPy(username=insta_username,
                       password=insta_password,
                       headless_browser=True,
-                      nogui=True,
                       multi_logs=False)
 
     return session
@@ -134,7 +133,7 @@ def xunfollow():
 
 # schedulers
 schedule.every().day.at("09:30").do(follow)
-schedule.every().day.at("11:30").do(follow)
+schedule.every().day.at("11:15").do(follow)
 schedule.every().day.at("12:30").do(follow)
 
 schedule.every().day.at("13:35").do(unfollow)
