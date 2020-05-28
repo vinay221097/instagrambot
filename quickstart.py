@@ -63,7 +63,7 @@ with smart_run(session):
          "newyork", "miami"],
         limit=10, sort='random', log_tags=True)
     session.set_dont_like(['promoter', 'nightclub'])
-    session.set_delimit_liking(enabled=True, max=1005, min=10)
+    session.set_delimit_liking(enabled=True, max_likes=1005, min_likes=20)
     session.like_by_tags(amount=random.randint(1, 15), use_smart_hashtags=True)
 
     # interact user followers activity
