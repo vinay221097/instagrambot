@@ -66,7 +66,7 @@ with smart_run(session):
         limit=10, sort='random', log_tags=True)
     session.set_dont_like(['promoter', 'nightclub'])
     session.set_delimit_liking(enabled=True, max_likes=1005, min_likes=20)
-    session.like_by_tags(hash_tag_list,amount=random.randint(1, 15))
+    session.like_by_tags(hash_tags_list,amount=random.randint(1, 15))
 
     # interact user followers activity
     session.set_user_interact(amount=5, randomize=True, percentage=50,
