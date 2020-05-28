@@ -15,8 +15,7 @@ session = InstaPy(username='smithjohn4321234', password='abcd4321@',headless_bro
 # let's go! :>
 with smart_run(session):
     # general settings
-    session.set_quota_supervisor(enabled=True, sleep_after=['likes', 'comments_d', 'follows', 'unfollows', 'server_calls_h'], sleepyhead=True, stochastic_flow=True, notify_me=True,
-                              peak_likes=(57, 585),
+    session.set_quota_supervisor(enabled=True, sleep_after=['likes', 'comments_d', 'follows', 'unfollows', 'server_calls_h'], sleepyhead=True, stochastic_flow=True, notify_me=True,peak_likes=(57, 585),
                                peak_comments=(21, 182),
                                 peak_follows=(48, None),
                                  peak_unfollows=(35, 402),
