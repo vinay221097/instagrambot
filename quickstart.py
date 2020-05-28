@@ -56,11 +56,13 @@ with smart_run(session):
          "[niqab", "[farright", "[rightwing",
          "#conservative", "death", "racist"])
     session.set_do_follow(enabled=True, percentage=25, times=2)
+    hash_tags_list = ["interiordesign", "artshow", "restaurant", "artist", "losangeles",
+         "newyork", "miami"]
+    hash_tags_list = [x.encode('utf-8') for x in hash_tags_list]
 
     # like by tags activity
     session.set_smart_hashtags(
-        ["interiordesign", "artshow", "restaurant", "artist", "losangeles",
-         "newyork", "miami"],
+        hash_tags_list,
         limit=10, sort='random', log_tags=True)
     session.set_dont_like(['promoter', 'nightclub'])
     session.set_delimit_liking(enabled=True, max_likes=1005, min_likes=20)
