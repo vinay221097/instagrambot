@@ -39,8 +39,8 @@ with smart_run(session):
 			'What camera did you use @{}?',
 			'Love your posts @{}',
 			'Looks awesome @{}',
-      'Fan of your Posts @{}',
-      'Awesome post @{}',
+      			'Fan of your Posts @{}',
+      			'Awesome post @{}',
 			'Getting inspired by you @{}',
 			':raised_hands: Yes!',
 			'I can feel your passion @{} :muscle:'])
