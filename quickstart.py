@@ -46,21 +46,21 @@ with smart_run(session):
 			'I can feel your passion @{} :muscle:'])
     session.set_use_clarifai(enabled=True, api_key='')
     session.clarifai_check_img_for(
-        ['nsfw', 'gay', 'hijab', 'niqab', 'religion', 'shirtless', 'fitness',
-         'yamaka', 'rightwing'], comment=False)
+        ["nsfw", "gay", "hijab", "niqab", "religion", "shirtless", "fitness",
+         "yamaka", "rightwing"], comment=False)
     session.set_dont_like(
-        ['dick', 'squirt', 'gay', 'homo', '#fit', '#fitfam', '#fittips',
-         '#abs', '#kids', '#children', '#child',
-         '[nazi',
-         'jew', 'judaism', '[muslim', '[islam', 'bangladesh', '[hijab',
-         '[niqab', '[farright', '[rightwing',
-         '#conservative', 'death', 'racist'])
+        ["dick", "squirt", "gay", "homo", "#fit", "#fitfam", "#fittips",
+         "#abs", "#kids", "#children", "#child",
+         "[nazi",
+         "jew", "judaism", "[muslim", "[islam", "bangladesh", "[hijab",
+         "[niqab", "[farright", "[rightwing",
+         "#conservative", "death", "racist"])
     session.set_do_follow(enabled=True, percentage=25, times=2)
 
     # like by tags activity
     session.set_smart_hashtags(
-        ['interiordesign', 'artshow', 'restaurant', 'artist', 'losangeles',
-         'newyork', 'miami'],
+        ["interiordesign", "artshow", "restaurant", "artist", "losangeles",
+         "newyork", "miami"],
         limit=10, sort='random', log_tags=True)
     session.set_dont_like(['promoter', 'nightclub'])
     session.set_delimit_liking(enabled=True, max=1005, min=10)
@@ -78,6 +78,8 @@ with smart_run(session):
 	    'What camera did you use @{}?',
 	    'Love your posts @{}',
 	    'Looks awesome @{}',
+	    'Fan of your paost @{}',
+	    'Awesome post @{}',
 	    'Getting inspired by you @{}',
 	    ':raised_hands: Yes!'])
     session.set_do_comment(enabled=True, percentage=30)
